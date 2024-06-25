@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - PDF - Bài 4</title>
+    <script>
+        function kiemTraGiaTri() {
+            let giaTri = document.getElementById('nhapSo').value;
+            if (!isNaN(giaTri) && giaTri.trim() !== '') {
+                alert('Thank you');
+            } else {
+                alert('Please enter a numeric value');
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="nhapSo">Please enter a number:</label>
+    <input type="text" id="nhapSo" onChange="kiemTraGiaTri()">
+</body>
+</html>
